@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Calorie Calculator</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Calorie Calculator</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#calculate">Calculator</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <div class="htitle">
+            <h1>Welcome to the <span>Calorie Calculator</span></h1>
+        </div>
+        <div class="hcontent">
+            <p>Determining calorie counts using Basal Metabolic Rate (BMR) is a scientifically grounded method to estimate the number of calories the body requires to maintain basic physiological functions at rest, such as breathing, circulation, and cell production. BMR serves as the foundation for understanding daily caloric needs and is influenced by factors like age, gender, height, weight, and body composition. The most widely used formula for calculating BMR is the Mifflin-St Jeor Equation, which provides separate equations for men and women due to physiological differences. Once BMR is determined, it can be adjusted using activity multipliers to estimate Total Daily Energy Expenditure (TDEE), accounting for physical activity levels. For example, a sedentary lifestyle requires about 20% more calories than BMR, while highly active individuals may need up to twice their BMR to sustain their energy demands. By understanding BMR and TDEE, individuals can tailor their calorie intake to meet specific health goals, such as weight maintenance, loss, or gain.
+            </p>
+     
+        </div>
+        <div class="himg">
+            <img src="/static/bmr.png" alt="bmr">
+        </div>        
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <br>
+    </section>
+
+
+
+    <section id="about">
+        <div class="atitle">
+            <h1>About the Calculator Project</h1>
+        </div>
+        <br>
+        <div class="apara">
+            <p>The Calorie Calculator is a user-friendly application designed to help individuals estimate their daily caloric needs based on personal factors such as age, gender, height, weight, and activity level. Using the scientifically validated Mifflin-St Jeor Equation, the calculator computes the Basal Metabolic Rate (BMR), which represents the number of calories the body requires at rest to maintain vital functions like breathing and circulation. This website then uses a python code with flask's framework to generate calculations of BMR for required number of Calories.</p>
+            <p>This project uses HTML, CSS and Flask's API to integrate Python code involving BMR for calculating calorie counts.</p>
+            <br>
+       
+        </div>
+        <br>
+        <br>
+        <div class="aptitle">
+            <h1>Languages Used:-</h1>
+            
+        </div>
+        
+        <div class="apoints">
+            <br>
+            <br>
+
+            <br>
+            <p>♢PYTHON</p>
+            <P>♢C-code interpretation</P>
+            <p>♢HTML</p>
+            <p>♢CSS</p>
+            <P>♢FLASK-API</P>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="calculate">
+        <br>
+        <br>
+        <div class="form title>">
+            <h1>Calculation Page</h1>
+        
+        
+        
+        </div>
+
+        <br>
+
+        <div class="form-container">
+            <h2>Enter Your Details</h2>
+            <form action="/calculate" method="POST">
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="age">Age (in years):</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit" class="btn">Calculate</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&#169 Made by Rajat Pandey</p>
+    </footer>
+</body>
+
+</html>
